@@ -1,6 +1,6 @@
 # Vocabulary Scraper
 
-** Python script to webscrape vocabulary conjugations.
+**Python script to webscrape vocabulary conjugations.
 
 Idea:
 Goal of the project is, to supply the script with a list of vocabularies.
