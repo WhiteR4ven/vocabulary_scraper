@@ -23,10 +23,29 @@ from bs4 import BeautifulSoup
     #print(i)
     url = "https://cooljugator.com/ro/" + i
     print(url)
-  
-# download content from the web url
+    
+  # note search vocab to output data list
+    data.append("\n") # insert newline to sepratate single vocabs
+    data.append(i)
+    data.append("\t") # insert a tab
 
-# scrape the online data
+    # download content from the web url
+    try:
+      html = requests.get(url)
+      soup = BeautifulSoup(html.content, "html.parser")
+      
+      search = ["present1", "present2", "present3", "present4", "present5", "present6"]
+      
+      # scrape the online data
+      for j in search:
+        conjug = soup.find(id=j).find(class_="forms-wrapper").find(class_="meta-form").text
+        #print(conjug)
+        data.append(conjug) # append to existing data
+        data.append("\t") # insert a tab
+         
+    except:
+      print('error: No online data found')
+    
       
 # save Data to output.txt
     
