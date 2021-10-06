@@ -11,7 +11,7 @@ import requests  # lib to make web requests
 from bs4 import BeautifulSoup
 
 # read in url-list
- with open('vocab_input.txt') as vocab_input:
+  with open('vocab_input.txt') as vocab_input:
     vocab_search = []
     vocab_search = [line.rstrip() for line in vocab_input]
 
@@ -23,14 +23,13 @@ from bs4 import BeautifulSoup
     #print(i)
     url = "https://cooljugator.com/ro/" + i
     print(url)
-    
-  # note search vocab to output data list
+
+    # note search vocab to output data list
     data.append("\n") # insert newline to sepratate single vocabs
     data.append(i)
     data.append("\t") # insert a tab
 
     # download content from the web url
-    try:
       html = requests.get(url)
       soup = BeautifulSoup(html.content, "html.parser")
       
@@ -42,11 +41,15 @@ from bs4 import BeautifulSoup
         #print(conjug)
         data.append(conjug) # append to existing data
         data.append("\t") # insert a tab
-         
-    except:
-      print('error: No online data found')
+
     
-      
-# save Data to output.txt
+  # save Data to output.txt
+    vocab_output = open('vocab_output.txt','w')
     
+    for x in range(len(data)):
+      #print(data[x])
+      vocab_output.write(data[x])
+
+    vocab_output.close()
+
 # EOF
