@@ -11,6 +11,7 @@ import requests  # lib to make web requests
 from bs4 import BeautifulSoup
 
 # read in url-list
+try:
   with open('vocab_input.txt') as vocab_input:
     vocab_search = []
     vocab_search = [line.rstrip() for line in vocab_input]
@@ -30,6 +31,7 @@ from bs4 import BeautifulSoup
     data.append("\t") # insert a tab
 
     # download content from the web url
+    try:
       html = requests.get(url)
       soup = BeautifulSoup(html.content, "html.parser")
       
@@ -41,7 +43,9 @@ from bs4 import BeautifulSoup
         #print(conjug)
         data.append(conjug) # append to existing data
         data.append("\t") # insert a tab
-
+         
+    except:
+      print('error: No online data found')
     
   # save Data to output.txt
     vocab_output = open('vocab_output.txt','w')
@@ -51,5 +55,8 @@ from bs4 import BeautifulSoup
       vocab_output.write(data[x])
 
     vocab_output.close()
+
+except IOError:
+  print('error: Vocab Input file does not exist')
 
 # EOF
