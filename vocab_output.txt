@@ -1,0 +1,19 @@
+
+găti	gătesc	 gătești	 gătește	 gătim	 gătiți	 gătesc	
+găsi	 găsesc	 găsești	 găsește	 găsim	 găsiți	 găsesc	
+glumi	 glumesc	 glumești	 glumește	 glumim	 glumiți	 glumesc	
+dori	doresc	 dorești	 dorește	 dorim	 doriți	 doresc	
+încinge	încing	 încingi	 încinge	 încingem	 încingeți	 încing	
+răci	răcesc	 răcești	 răcește	 răcim	 răciți	 răcesc	
+primi	primesc	 primești	 primește	 primim	 primiți	 primesc	
+locui	 locuiesc	 locuiești	 locuiește	 locuim	 locuiți	 locuiesc	
+promite	 promit	 promiți	 promite	 promitem	 promiteți	 promit	
+urmări	urmăresc	 urmărești	 urmărește	 urmărim	 urmăriți	 urmăresc	
+sfătui	sfătuiesc	 sfătuiești	 sfătuiește	 sfătuim	 sfătuiți	 sfătuiesc	
+înșela	înșel	 înșeli	 înșală	 înșelăm	 înșelați	 înșală	
+lăuda	laud	 lauzi	 laudă	 lăudăm	 lăudați	 laudă	
+acuza	 acuz	 acuzi	 acuză	 acuzăm	 acuzați	 acuză	
+uita	uit	 uiți	 uită	 uităm	 uitați	 uită	
+certa	cert	 certi	 ceartă	 certăm	 certați	 ceartă	
+ierta	 iert	 ierți	 iartă	 iertăm	 iertați	 iartă	
+trăda	trădez	 trădezi	 trădează	 trădăm	 trădați	 trădează	
