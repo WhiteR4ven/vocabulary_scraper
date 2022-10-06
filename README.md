@@ -3,15 +3,16 @@
 **Python script to webscrape vocabulary conjugations.**
 
 __Idea:__
-Goal of the project is, to supply a script with a own list of vocabularies.
-Afterwards the script webscrapes all the vocabulary conjugations and writes them into an export file, that is easy to import into Excel.
+Goal of the project is, to supply a script with a own list of vocabularies (verbs).
+Afterwards the script webscrapes all the verb conjugations and writes them into an export file, that is easy to import into Excel.
 
 __How-To:__
 - Supply a vocab_input.txt
   containing the base forms of your search vocabulary
 - The script uses the online website of "Cooljugator"
   https://cooljugator.com/ro/
-  change the URL if necessary
+  change the URL to the language you need. In the example it is Romanian.
+  English would be the following URL: https://cooljugator.com/en  
 - the script extracts the conjugations defined in the search list.
   For this example as present conjugations 
   search = ["present1", "present2", "present3", "present4", "present5", "present6"]
